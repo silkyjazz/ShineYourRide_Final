@@ -1,0 +1,361 @@
+@font-face {
+    font-family: 'Intro';
+    src: url('./fonts/Intro.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Kudos';
+    src: url(./fonts/Kudos.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Glacial Bold';
+    src: url(./fonts/GlacialIndifference-Bold.otf);
+}
+@font-face {
+    font-family: 'Glacial Regular';
+    src: url(./fonts/GlacialIndifference-Regular.otf);
+}
+@font-face {
+    font-family: 'Intro Black';
+    src: url(./fonts/IntroBlack.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Holiday';
+    src: url(./fonts/HolidayFree.otf);
+}
+
+html,
+body {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Ensures padding and border are included in the element's total width and height */
+    background-color: black;
+}
+.icon-text{
+    font-family: 'Kudos';
+}
+.fa-calendar-days{
+    color: #a60e13;
+    margin-right: 135px;
+    font-size: 25px;
+    
+}
+.navbar {
+    font-family: 'Glacial Regular';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    margin: 0;
+    /* Ensures no extra space */
+    padding: 1em 0;
+    /* You can adjust this padding as needed */
+    margin-top: -60px;
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar ul li {
+    margin-left: 20px;
+}
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+.navbar button {
+    padding: 0.5em 1em;
+    background-color: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.navbar-logo img {
+    max-width: 200px;
+    /* Adjust the size of your logo */
+   margin-left: 40px;
+   margin-top: -70px;
+    height: auto;
+
+}
+.home-section {
+    background-color: black;
+    height: 95vh;
+    padding-bottom: 130px;
+    /* Ensure no padding */
+    margin: 0;
+    /* Ensure no margin */
+    margin-top: -60px;
+    position: relative;
+    /* Allows positioning of children absolutely */
+    display: flex;
+    /* Enables flexbox */
+    align-items: center;
+    /* Vertically centers the content */
+    justify-content: space-between;
+    /* Spaces out the text and image */
+}
+.home-text {
+    color: #fff;
+    font-family: 'Intro Black';
+    font-size: 190px;
+    padding: 60px;
+    line-height: 0.8;
+    margin: 0;
+    /* Remove default margin */
+    position: relative;
+    /* Keeps this element in the normal document flow */
+}
+.second-text {
+    color: #a60e13;
+    font-family: 'Holiday';
+    font-size: 95px;
+    position: absolute;
+    /* Positions this element relative to the nearest positioned ancestor */
+    top: 450px;
+    /* Adjust as needed to control overlap */
+    left: 390px;
+    /* Adjust for horizontal alignment */
+}
+img {
+    max-width: 60%;
+    /* Adjust the image size */
+    height: auto;
+    padding-top: 60px;
+}
+.services-section {
+    height: 100vh;
+    padding: 30px 0;
+}
+.services-text {
+    font-family: 'Kudos';
+    color: black;
+    padding-top: 20px;
+    padding-left: 50px;
+    font-size: 130px;
+    padding-bottom: 30px;
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns */
+    gap: 80px;
+}
+.service-item {
+    background-color: #fff;
+    /* White background for contrast */
+    border: 2px solid black;
+    /* Black border */
+    padding: 20px;
+    /* Padding inside the border */
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    justify-content: space-between;
+    /* Ensure even spacing */
+    height: 300px;
+    /* Set a fixed height to ensure uniformity */
+}
+.service-item h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Glacial Bold';
+}
+.service-item p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.service-item ul {
+    list-style: none;
+    padding: 0;
+    margin-top: auto;
+    font-family: 'Glacial Regular'
+    /* Push the list to the bottom */
+}
+.service-item ul li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.pricing-note {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 130px;
+    font-weight: bold;
+}
+.packages-section {
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: flex-end;
+    /* Aligns content to the right horizontally */
+    /* align-items: flex-end; Aligns content to the bottom vertically */
+}
+.packages-text {
+    font-family: 'Kudos';
+    color: #a60e13;
+    font-size: 130px;
+    padding-top: 40px;
+    padding-right: 50px;
+}
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns */
+    gap: 30px;
+}
+.package-item {
+    border: 2px solid white;
+    /* Black border */
+    padding: 20px;
+    /* Padding inside the border */
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    justify-content: flex-start;
+    /* Ensure even spacing */
+    height: 500px;
+    /* Set a fixed height to ensure uniformity */
+}
+.package-item h2{
+    font-family: 'Glacial Bold';
+}
+.package-item ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    font-family: 'Glacial Regular'
+    /* Push the list to the bottom */
+}
+.package-item ul li {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 0.9;
+}
+.bronze{
+    color: #CD7F32;
+
+}
+.silver{
+    color: #C0C0C0;
+}
+.gold{
+    color:#FFD700
+}
+.detailing-section{
+    height: 100vh;
+    background-color: #fff;
+}
+.contact-section {
+    background-color: #000;
+    height: 60vh;
+
+}
+.container-wrapper{
+    display: flex; /* Flexbox to place text and image side by side */
+    align-items: center; /* Aligns items vertically */
+    justify-content: space-between; /* Adds space between the text and the image */
+    margin-bottom: 20px; /* Adds spacing between the contact info and the rest */
+}
+.contact-image{
+    width: 200px;
+    margin-right: 100px;
+}
+.contact-text {
+    font-family: 'Kudos';
+    font-size: 130px;
+    color: #fff;
+    padding-top: 40px;
+    padding-left: 50px;
+}
+.contact-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 10px;
+   
+}
+.contact-locations ul {
+    font-family: 'Glacial Regular';
+    font-size: 20px;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    text-align: center; /* Center text */
+    line-height: 1.5;
+    color: #fff; 
+}
+.contact-hours ul {
+    color: #fff; 
+    list-style: none;
+    font-family: 'Glacial Regular';
+    font-size: 20px;
+    padding: 0;
+    margin-top: 10px;
+    text-align: center; /* Center text */
+    line-height: 1.5;
+}
+.contact-socials ul {
+    list-style: none;
+    font-family: 'Glacial Regular';
+    font-size: 20px;
+    padding: 0;
+    margin-top: 10px;
+    text-align: center; /* Center text */
+    line-height: 1.9;
+}
+.contact-socials ul a{
+    color: #fff; /* Change to your desired color */
+    text-decoration: none; /* Removes the underline */
+}
+.contact-socials ul a:hover {
+    text-decoration: none; /* Adds underline on hover */
+    color: #a60e13; /* Change color on hover */
+}
+/* ------------------------- Responsive CSS -------------------------------*/
+
+
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+    }
+
+    .navbar-toggle {
+        display: inline-block;
+        color: white;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+    .navbar ul.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        background-color: #333;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        margin: 15px 0;
+    }
+}
